@@ -5,6 +5,7 @@ import os
 
 STUDIO_ID = 51744069
 STATE_FILE = "tracked_projects.json"
+WEBHOOK_URL = os.environ.get("WEBHOOK_URL")
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -24,6 +25,15 @@ def safe_request(url, **kwargs):
                 return None
             time.sleep(3)
     return None
+
+def send_webhook(message):
+    if not WEBHOOK_URL:
+        return
+    payload = {"content": message} # Compatible with Discord webhooks
+    try:
+        requests.post(WEBHOOK_URL, json=payload, timeout=10)
+    except Exception as e:
+        print(f"Failed to send webhook notification: {e}")
 
 def get_all_studio_projects(studio_id):
     all_projects = []
@@ -84,11 +94,15 @@ def main():
             
             if p_id in tracked_projects:
                 if tracked_projects[p_id] != current_modified:
-                    print(f"ALERT: '{p_title}' (ID: {p_id}) was updated at {current_modified}!")
+                    msg = f"🔔 **ALERT:** '{p_title}' (ID: {p_id}) was updated at {current_modified}!"
+                    print(msg)
+                    send_webhook(msg)
                     tracked_projects[p_id] = current_modified
             else:
                 if not is_first_run:
-                    print(f"NEW ADDITION: '{p_title}' was added to the studio.")
+                    msg = f"✨ **NEW ADDITION:** '{p_title}' was added to the studio."
+                    print(msg)
+                    send_webhook(msg)
                 tracked_projects[p_id] = current_modified
                 
         time.sleep(0.15)
