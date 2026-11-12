@@ -99,7 +99,17 @@ def main():
     print(f"Checking {len(current_projects)} projects for Studio {STUDIO_ID}...")
 
     changes_detected = False
+    # 1. Check for removed projects (skip on first run)
+    if not is_first_run:
+        removed_ids = tracked_p_ids - current_p_ids
+        for r_id in removed_ids:
+            msg = f"🗑️ **REMOVED:** Project (ID: {r_id}) was removed from the studio."
+            print(msg)
+            send_webhook(msg)
+            del tracked_projects[r_id]  # Clean it out of the state
+            changes_detected = True
 
+    # 2. Check for updates and new additions
     for proj in current_projects:
         p_id = str(proj['id'])
         p_title = proj['title']
