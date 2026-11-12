@@ -77,7 +77,8 @@ def save_state(state):
     with open(STATE_FILE, "w") as f:
         json.dump(state, f, indent=4)
 
-tracked_projects = load_state()
+def main():
+    tracked_projects = load_state()
     current_projects = get_all_studio_projects(STUDIO_ID)
     
     if not current_projects:
