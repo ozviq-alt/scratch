@@ -99,6 +99,11 @@ def main():
     print(f"Checking {len(current_projects)} projects for Studio {STUDIO_ID}...")
 
     changes_detected = False
+
+    # Define both ID sets here before checking removals
+    current_p_ids = {str(proj['id']) for proj in current_projects}
+    tracked_p_ids = set(tracked_projects.keys())
+    
     # 1. Check for removed projects (skip on first run)
     if not is_first_run:
         removed_ids = tracked_p_ids - current_p_ids
