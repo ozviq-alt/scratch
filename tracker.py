@@ -1,5 +1,8 @@
-print("DEBUG: Script started successfully!")
+print("DEBUG: 1. Script started")
+
 from curl_cffi import requests
+print("DEBUG: 2. Imported curl_cffi")
+
 import time
 import json
 import os
@@ -7,6 +10,8 @@ import os
 STUDIO_ID = 51744069
 STATE_FILE = "tracked_projects.json"
 WEBHOOK_URL = os.environ.get("WEBHOOK_URL")
+
+print("DEBUG: 3. Constants loaded")
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -79,8 +84,12 @@ def save_state(state):
         json.dump(state, f, indent=4)
 
 def main():
+    print("DEBUG: 4. Entered main function")
     tracked_projects = load_state()
+    print("DEBUG: 5. State loaded")
+    
     current_projects = get_all_studio_projects(STUDIO_ID)
+    print(f"DEBUG: 6. Fetched projects count: {len(current_projects) if current_projects else 'None'}")
     
     if not current_projects:
         print("Failed to fetch studio projects.")
