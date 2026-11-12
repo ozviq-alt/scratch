@@ -77,8 +77,7 @@ def save_state(state):
     with open(STATE_FILE, "w") as f:
         json.dump(state, f, indent=4)
 
-def main():
-    tracked_projects = load_state()
+tracked_projects = load_state()
     current_projects = get_all_studio_projects(STUDIO_ID)
     
     if not current_projects:
@@ -87,6 +86,8 @@ def main():
 
     is_first_run = len(tracked_projects) == 0
     print(f"Checking {len(current_projects)} projects for Studio {STUDIO_ID}...")
+
+    changes_detected = False
 
     for proj in current_projects:
         p_id = str(proj['id'])
@@ -102,17 +103,21 @@ def main():
                     print(msg)
                     send_webhook(msg)
                     tracked_projects[p_id] = current_modified
+                    changes_detected = True
             else:
                 if not is_first_run:
                     msg = f"✨ **NEW ADDITION:** '{p_title}' was added to the studio."
                     print(msg)
                     send_webhook(msg)
+                    changes_detected = True
                 tracked_projects[p_id] = current_modified
                 
         time.sleep(0.15)
 
     save_state(tracked_projects)
-    print("Check completed and state saved.")
 
-if __name__ == "__main__":
-    main()
+    # Send a status message if no updates occurred (skipping the very first run)
+    if not changes_detected and not is_first_run:
+        send_webhook("🔍 **Status Check:** Scanned studio. No new updates or additions found.")
+
+    print("Check completed and state saved.")
