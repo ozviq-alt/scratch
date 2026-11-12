@@ -132,3 +132,11 @@ def main():
         send_webhook("🔍 **Status Check:** Scanned studio. No new updates or additions found.")
 
     print("Check completed and state saved.")
+if __name__ == "__main__":
+    try:
+        print("DEBUG: Calling main()")
+        main()
+    except Exception as e:
+        print(f"CRASHED: {e}")
+        import traceback
+        traceback.print_exc()
