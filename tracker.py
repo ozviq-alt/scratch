@@ -1,3 +1,4 @@
+print("DEBUG: Script started successfully!")
 from curl_cffi import requests
 import time
 import json
