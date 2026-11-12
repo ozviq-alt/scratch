@@ -65,8 +65,12 @@ def get_project_details(project_id):
 
 def load_state():
     if os.path.exists(STATE_FILE):
-        with open(STATE_FILE, "r") as f:
-            return json.load(f)
+        try:
+            with open(STATE_FILE, "r") as f:
+                return json.load(f)
+        except json.JSONDecodeError:
+            print("State file was corrupted or invalid. Resetting to empty state.")
+            return {}
     return {}
 
 def save_state(state):
