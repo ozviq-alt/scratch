@@ -126,7 +126,9 @@ def main():
         details = get_project_details(p_id)
         
         if details:
-            current_modified = details.get('history', {}).get('modified')
+            history = details.get('history', {})
+            current_modified = history.get('modified')
+            current_created = history.get('created')  # Grab the creation date
             
             if p_id in tracked_projects:
                 if tracked_projects[p_id] != current_modified:
@@ -134,7 +136,7 @@ def main():
                     old_modified = old_data.get("modified") if isinstance(old_data, dict) else old_data
                     
                     if old_modified != current_modified:
-                        msg = f"🔔 **ALERT:** '{p_title}' (ID: {p_id}) was updated at {current_modified}!"
+                        msg = f"🔔 **ALERT:** '{p_title}' (ID: {p_id}) was updated!\n> **Created:** {current_created}\n> **Modified:** {current_modified}"
                         print(msg)
                         send_webhook(msg)
                         changes_detected = True
@@ -144,10 +146,11 @@ def main():
                     print(msg)
                     send_webhook(msg)
                     changes_detected = True
-            # Save both title and modified time in state
+            # Save title, modified time, and creation time in state
             tracked_projects[p_id] = {
                 "title": p_title,
-                "modified": current_modified
+                "modified": current_modified,
+                "created": current_created
             }
                 
         time.sleep(0.15)
