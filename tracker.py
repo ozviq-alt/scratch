@@ -108,6 +108,10 @@ def main():
     if not is_first_run:
         removed_ids = tracked_p_ids - current_p_ids
         for r_id in removed_ids:
+            # Retrieve the title from saved state before deleting it
+            r_data = tracked_projects.get(r_id, {})
+            r_title = r_data.get("title", "Unknown Project") if isinstance(r_data, dict) else "Unknown Project"
+            
             msg = f"🗑️ **REMOVED:** Project (ID: {r_id}) was removed from the studio."
             print(msg)
             send_webhook(msg)
@@ -125,10 +129,13 @@ def main():
             
             if p_id in tracked_projects:
                 if tracked_projects[p_id] != current_modified:
+                    old_data = tracked_projects[p_id]
+                    old_modified = old_data.get("modified") if isinstance(old_data, dict) else old_data
+                    
+                    if old_modified != current_modified:
                     msg = f"🔔 **ALERT:** '{p_title}' (ID: {p_id}) was updated at {current_modified}!"
                     print(msg)
                     send_webhook(msg)
-                    tracked_projects[p_id] = current_modified
                     changes_detected = True
             else:
                 if not is_first_run:
@@ -136,7 +143,11 @@ def main():
                     print(msg)
                     send_webhook(msg)
                     changes_detected = True
-                tracked_projects[p_id] = current_modified
+            # Save both title and modified time in state
+            tracked_projects[p_id] = {
+                "title": p_title,
+                "modified": current_modified
+            }
                 
         time.sleep(0.15)
 
