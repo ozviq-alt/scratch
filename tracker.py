@@ -133,10 +133,10 @@ def main():
                     old_modified = old_data.get("modified") if isinstance(old_data, dict) else old_data
                     
                     if old_modified != current_modified:
-                    msg = f"🔔 **ALERT:** '{p_title}' (ID: {p_id}) was updated at {current_modified}!"
-                    print(msg)
-                    send_webhook(msg)
-                    changes_detected = True
+                        msg = f"🔔 **ALERT:** '{p_title}' (ID: {p_id}) was updated at {current_modified}!"
+                        print(msg)
+                        send_webhook(msg)
+                        changes_detected = True
             else:
                 if not is_first_run:
                     msg = f"✨ **NEW ADDITION:** '{p_title}' was added to the studio."
