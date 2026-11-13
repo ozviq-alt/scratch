@@ -112,7 +112,8 @@ def main():
             r_data = tracked_projects.get(r_id, {})
             r_title = r_data.get("title", "Unknown Project") if isinstance(r_data, dict) else "Unknown Project"
             
-            msg = f"🗑️ **REMOVED:** Project (ID: {r_id}) was removed from the studio."
+            msg = f"🗑️ **REMOVED:** '{r_title}' (ID: {r_id}) was removed from the studio."
+            print(f"DEBUG: Removing ID {r_id}, found data: {r_data}")
             print(msg)
             send_webhook(msg)
             del tracked_projects[r_id]  # Clean it out of the state
