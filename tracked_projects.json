@@ -1371,7 +1371,7 @@
     },
     "1391295499": {
         "title": "my aperial numerals (0 to 2900) (MOVED)",
-        "modified": "2026-11-09T20:04:36.000Z",
+        "modified": "2026-11-15T04:29:48.000Z",
         "created": "2026-10-13T22:15:04.000Z"
     },
     "1383983907": {
@@ -1781,7 +1781,7 @@
     },
     "1376040530": {
         "title": "Official daniary numerals",
-        "modified": "2026-11-15T02:57:50.000Z",
+        "modified": "2026-11-15T03:39:20.000Z",
         "created": "2026-08-28T20:10:53.000Z"
     },
     "1387590076": {
@@ -5716,7 +5716,7 @@
     },
     "1318670353": {
         "title": "Official aperial numbers",
-        "modified": "2026-11-06T13:52:04.000Z",
+        "modified": "2026-11-15T03:56:43.000Z",
         "created": "2026-05-11T14:02:08.000Z"
     },
     "1439884511": {
@@ -5786,12 +5786,22 @@
     },
     "1437681879": {
         "title": "basaperial, 131 (early access, wip)",
-        "modified": "2026-11-15T03:29:27.000Z",
+        "modified": "2026-11-15T04:06:21.000Z",
         "created": "2026-11-08T23:31:43.000Z"
     },
     "1399137976": {
         "title": "Infinite Aperial Table [WIP]",
         "modified": "2026-11-05T20:23:00.000Z",
         "created": "2026-11-04T01:56:26.000Z"
+    },
+    "1397948702": {
+        "title": "Basaperial - Semiprimes more 110 and less 382  (Multiplies of 3, Three sorts + ALT Sounds)",
+        "modified": "2026-10-31T16:06:41.000Z",
+        "created": "2026-10-31T14:41:17.000Z"
+    },
+    "1395194978": {
+        "title": "Basaperial - Semiprimes more 73 and less 255  (Multiplies of 2, Three sorts + ALT Sounds)",
+        "modified": "2026-10-31T14:40:00.000Z",
+        "created": "2026-10-24T00:12:18.000Z"
     }
 }
