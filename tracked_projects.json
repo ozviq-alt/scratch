@@ -2131,7 +2131,7 @@
     },
     "1267399591": {
         "title": "Official Aperial Colors",
-        "modified": "2026-11-12T06:40:51.000Z",
+        "modified": "2026-11-15T00:31:05.000Z",
         "created": "2026-01-17T21:14:19.000Z"
     },
     "1385498764": {
@@ -5776,7 +5776,7 @@
     },
     "1440232748": {
         "title": "Palse submission (possibly declined)",
-        "modified": "2026-11-14T17:02:39.000Z",
+        "modified": "2026-11-15T01:04:28.000Z",
         "created": "2026-11-14T16:58:37.000Z"
     },
     "1440241622": {
@@ -5786,7 +5786,12 @@
     },
     "1437681879": {
         "title": "basaperial, 131 (early access, wip)",
-        "modified": "2026-11-15T00:18:36.000Z",
+        "modified": "2026-11-15T00:50:57.000Z",
         "created": "2026-11-08T23:31:43.000Z"
+    },
+    "1399137976": {
+        "title": "Infinite Aperial Table [WIP]",
+        "modified": "2026-11-05T20:23:00.000Z",
+        "created": "2026-11-04T01:56:26.000Z"
     }
 }
