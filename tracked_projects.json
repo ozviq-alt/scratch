@@ -486,7 +486,7 @@
     },
     "1395187392": {
         "title": "The Larpial Base Infinity System. (Public Release)",
-        "modified": "2026-11-15T01:54:38.000Z",
+        "modified": "2026-11-16T17:21:33.000Z",
         "created": "2026-10-23T23:27:48.000Z"
     },
     "1398081328": {
@@ -5828,5 +5828,10 @@
         "title": "basaperial, 49",
         "modified": "2026-11-15T22:47:10.000Z",
         "created": "2026-11-01T20:35:13.000Z"
+    },
+    "1440452233": {
+        "title": "Aperialblocks band but 36-47 are monocolored",
+        "modified": "2026-11-16T16:40:06.000Z",
+        "created": "2026-11-15T14:27:44.000Z"
     }
 }
