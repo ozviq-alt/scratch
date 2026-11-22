@@ -1751,7 +1751,7 @@
     },
     "1388438922": {
         "title": "Official Aperial Numberlings",
-        "modified": "2026-11-22T18:38:04.000Z",
+        "modified": "2026-11-22T19:26:47.000Z",
         "created": "2026-10-05T23:22:00.000Z"
     },
     "1388429074": {
@@ -5136,7 +5136,7 @@
     },
     "1351328279": {
         "title": "official aperial numbers but numberlings",
-        "modified": "2026-11-22T18:37:51.000Z",
+        "modified": "2026-11-22T18:47:54.000Z",
         "created": "2026-07-04T21:06:13.000Z"
     },
     "1328722645": {
@@ -6055,8 +6055,8 @@
         "created": "2026-11-21T05:55:06.000Z"
     },
     "1442801739": {
-        "title": "basaperial, 74 (50%)",
-        "modified": "2026-11-22T11:52:14.000Z",
+        "title": "basaperial, 74 ",
+        "modified": "2026-11-22T19:05:53.000Z",
         "created": "2026-11-21T05:51:48.000Z"
     },
     "1442802680": {
@@ -6118,5 +6118,15 @@
         "title": "Aperial Tesseracts band (1-625)",
         "modified": "2026-11-21T21:16:48.000Z",
         "created": "2026-11-21T21:14:14.000Z"
+    },
+    "1442002021": {
+        "title": "basaperial, 42",
+        "modified": "2026-11-22T18:51:20.000Z",
+        "created": "2026-11-19T00:00:03.000Z"
+    },
+    "1443155749": {
+        "title": "Aperial 4 Times Table (Part II)",
+        "modified": "2026-11-22T18:42:07.000Z",
+        "created": "2026-11-22T18:22:55.000Z"
     }
 }
