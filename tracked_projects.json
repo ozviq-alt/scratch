@@ -275,8 +275,8 @@
         "created": "2026-11-07T18:26:14.000Z"
     },
     "1434146565": {
-        "title": "Aperial 23 (Neem) Times Table [V1.8] (23-23000)",
-        "modified": "2026-11-16T13:32:36.000Z",
+        "title": "Aperial 23 (Neem) Times Table [V1.9] (23-23000)",
+        "modified": "2026-11-24T11:21:01.000Z",
         "created": "2026-11-07T13:26:28.000Z"
     },
     "1432233156": {
@@ -815,8 +815,8 @@
         "created": "2026-10-25T01:04:30.000Z"
     },
     "1395349946": {
-        "title": "Aperial Magnitudes of Six (V1.1)",
-        "modified": "2026-11-24T10:09:13.000Z",
+        "title": "Aperial Magnitudes of Six (V1.2.1)",
+        "modified": "2026-11-24T11:17:55.000Z",
         "created": "2026-10-24T15:03:58.000Z"
     },
     "1395353741": {
@@ -4581,7 +4581,7 @@
     },
     "1333316827": {
         "title": "Aperial 47 times table (V2.1 beta)",
-        "modified": "2026-11-24T00:26:42.000Z",
+        "modified": "2026-11-24T11:09:04.000Z",
         "created": "2026-06-19T09:17:35.000Z"
     },
     "1367597310": {
@@ -6398,5 +6398,10 @@
         "title": " RUINED THE FAKER",
         "modified": "2026-11-22T02:02:55.000Z",
         "created": "2026-11-22T02:01:48.000Z"
+    },
+    "1443833432": {
+        "title": "basaperial, 75 (20%)",
+        "modified": "2026-11-24T11:26:48.000Z",
+        "created": "2026-11-24T11:05:05.000Z"
     }
 }
