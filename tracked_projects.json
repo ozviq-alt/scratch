@@ -205,8 +205,8 @@
         "created": "2026-11-11T08:15:51.000Z"
     },
     "1398212720": {
-        "title": "Aperial Magnitudes of 2 Remastered (V1.2)",
-        "modified": "2026-11-26T14:16:27.000Z",
+        "title": "Aperial Magnitudes of 2 Remastered (V1.3)",
+        "modified": "2026-11-26T17:03:46.000Z",
         "created": "2026-11-01T21:09:07.000Z"
     },
     "1437991343": {
@@ -715,8 +715,8 @@
         "created": "2026-10-27T11:27:08.000Z"
     },
     "1396762866": {
-        "title": "aperial 1-270 pack",
-        "modified": "2026-11-26T16:34:30.000Z",
+        "title": "aperial 1-290 pack",
+        "modified": "2026-11-26T17:04:04.000Z",
         "created": "2026-10-28T13:05:33.000Z"
     },
     "1395631339": {
@@ -6343,5 +6343,30 @@
         "title": "Aperial 163 Times Table | v1.1",
         "modified": "2026-11-26T16:19:06.000Z",
         "created": "2026-11-12T05:03:03.000Z"
+    },
+    "1444511682": {
+        "title": "basaperial, 45",
+        "modified": "2026-11-25T22:11:47.000Z",
+        "created": "2026-11-25T22:08:33.000Z"
+    },
+    "1444098955": {
+        "title": "basaperial, 44",
+        "modified": "2026-11-25T01:14:37.000Z",
+        "created": "2026-11-25T01:11:22.000Z"
+    },
+    "1444539827": {
+        "title": "basaperial, 41",
+        "modified": "2026-11-26T01:12:58.000Z",
+        "created": "2026-11-26T00:34:48.000Z"
+    },
+    "1444836311": {
+        "title": "basaperial, 20 minor",
+        "modified": "2026-11-26T17:22:33.000Z",
+        "created": "2026-11-26T15:39:17.000Z"
+    },
+    "1444832771": {
+        "title": "I fixed some basaperial sounds",
+        "modified": "2026-11-26T16:08:20.000Z",
+        "created": "2026-11-26T15:27:15.000Z"
     }
 }
