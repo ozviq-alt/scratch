@@ -206,7 +206,7 @@
     },
     "1398212720": {
         "title": "Aperial Magnitudes of 2 Remastered (V1.2)",
-        "modified": "2026-11-25T22:38:31.000Z",
+        "modified": "2026-11-26T14:16:27.000Z",
         "created": "2026-11-01T21:09:07.000Z"
     },
     "1437991343": {
@@ -5765,8 +5765,8 @@
         "created": "2026-11-14T16:58:37.000Z"
     },
     "1440241622": {
-        "title": "Aperial 83 Times Table (v1.5)",
-        "modified": "2026-11-15T17:34:54.000Z",
+        "title": "Aperial 83 Times Table (v1.6)",
+        "modified": "2026-11-26T13:27:35.000Z",
         "created": "2026-11-14T17:43:41.000Z"
     },
     "1437681879": {
@@ -6338,5 +6338,10 @@
         "title": "basGodstorer, 2",
         "modified": "2026-11-26T04:28:02.000Z",
         "created": "2026-11-26T03:51:52.000Z"
+    },
+    "1439217381": {
+        "title": "Aperial 163 Times Table | v1",
+        "modified": "2026-11-26T13:36:50.000Z",
+        "created": "2026-11-12T05:03:03.000Z"
     }
 }
