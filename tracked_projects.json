@@ -275,8 +275,8 @@
         "created": "2026-11-07T18:26:14.000Z"
     },
     "1434146565": {
-        "title": "Aperial 23 (Neem) Times Table [V1.10] (23-23000)",
-        "modified": "2026-11-26T14:44:07.000Z",
+        "title": "Aperial 23 (Neem) Times Table [V1.11] (23-23000)",
+        "modified": "2026-11-27T13:15:30.000Z",
         "created": "2026-11-07T13:26:28.000Z"
     },
     "1432233156": {
@@ -1876,7 +1876,7 @@
     },
     "1383884685": {
         "title": "The Argamlings Project (WIP) (ARGAM)",
-        "modified": "2026-11-26T19:55:54.000Z",
+        "modified": "2026-11-27T13:08:13.000Z",
         "created": "2026-09-22T18:33:56.000Z"
     },
     "1387641864": {
@@ -5541,7 +5541,7 @@
     },
     "1318748903": {
         "title": "Fan-Perial Extension",
-        "modified": "2026-11-26T12:35:15.000Z",
+        "modified": "2026-11-27T13:14:34.000Z",
         "created": "2026-05-11T16:51:45.000Z"
     },
     "1335014920": {
@@ -6356,7 +6356,7 @@
     },
     "1444836311": {
         "title": "basaperial, 20 minor",
-        "modified": "2026-11-26T17:22:33.000Z",
+        "modified": "2026-11-27T13:41:17.000Z",
         "created": "2026-11-26T15:39:17.000Z"
     },
     "1444832771": {
@@ -6403,5 +6403,10 @@
         "title": "aperialblock key sound calculator",
         "modified": "2026-11-26T23:11:38.000Z",
         "created": "2022-09-03T15:35:31.000Z"
+    },
+    "1441310824": {
+        "title": "Aperial 3 Times Table Part 10",
+        "modified": "2026-11-27T01:42:24.000Z",
+        "created": "2026-11-17T14:20:47.000Z"
     }
 }
